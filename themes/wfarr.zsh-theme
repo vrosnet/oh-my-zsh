@@ -50,10 +50,10 @@ need_push () {
   fi
 }
 
-rvm_prompt(){
-  if $(which rvm &> /dev/null)
+rbenv_prompt(){
+  if $(which rbenv &> /dev/null)
   then
-    echo "%{$fg_bold[blue]%}$(rvm tools identifier)%{$reset_color%}"
+    echo "%{$fg_bold[blue]%}$(rbenv version-name)%{$reset_color%}"
   else
     echo ""
   fi
@@ -82,7 +82,7 @@ directory_name(){
   echo "%{$fg_bold[yellow]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rvm_prompt) in $(directory_name) $(project_name_color)$(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n$(rbenv_prompt) in $(directory_name) $(project_name_color)$(git_dirty)$(need_push)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[grey]%}$(todo)%{$reset_color%}"
 }
