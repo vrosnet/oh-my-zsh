@@ -34,9 +34,7 @@ plugins=(brew rails3 git textmate ruby bundler github pow osx rvm vagrant)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/wfarr/bin:/usr/local/bin:/usr/local/sbin:$PATH
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+export PATH=/usr/local/Cellar/rbenv/bin:/Users/wfarr/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 alias gnax="ssh gw01.gnax -t 'screen -x'"
 alias pnap="ssh gw01.pnap -t 'screen -x'"
@@ -44,3 +42,5 @@ alias pnap="ssh gw01.pnap -t 'screen -x'"
 alias reload!='. ~/.zshrc'
 export EDITOR='vim'
 alias knife='nocorrect knife'
+
+eval "$(rbenv init -)"
