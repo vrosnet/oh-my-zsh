@@ -8,8 +8,8 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="wfarr"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="mate ~/.zshrc"
+alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -24,7 +24,7 @@ export ZSH_THEME="wfarr"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -35,12 +35,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/Cellar/rbenv/bin:/Users/wfarr/bin:/usr/local/bin:/usr/local/sbin:$PATH
-
-alias gnax="ssh gw01.gnax -t 'screen -x'"
-alias pnap="ssh gw01.pnap -t 'screen -x'"
+export EDITOR='mate -w'
 
 alias reload!='. ~/.zshrc'
-export EDITOR='vim'
-alias knife='nocorrect knife'
+alias be='nocorrect bundle exec'
 
 eval "$(rbenv init -)"
