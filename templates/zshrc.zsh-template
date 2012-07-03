@@ -34,8 +34,8 @@ plugins=(brew rails3 git textmate ruby bundler github pow osx rvm vagrant)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/Cellar/rbenv/bin:/Users/wfarr/bin:/usr/local/bin:/usr/local/sbin:$PATH
-export EDITOR='mate -w'
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export EDITOR='vim'
 
 alias reload!='. ~/.zshrc'
 alias be='nocorrect bundle exec'
