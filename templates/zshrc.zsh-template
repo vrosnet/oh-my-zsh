@@ -40,4 +40,4 @@ export EDITOR='vim'
 alias reload!='. ~/.zshrc'
 alias be='nocorrect bundle exec'
 
-eval "$(rbenv init -)"
+source /opt/github/env.sh
