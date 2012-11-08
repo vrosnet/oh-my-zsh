@@ -6,7 +6,6 @@ export COMPLETION_WAITING_DOTS="true"
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export EDITOR='vim'
 
 alias reload!='. ~/.zshrc'
@@ -25,4 +24,6 @@ gitio() {
   fi
 }
 
-source /opt/github/env.sh
+source ~/.github-private.sh
+
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
